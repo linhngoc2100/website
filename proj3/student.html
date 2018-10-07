@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+Nguyen, Linh    Account:  trst019
+        CS545, Fall 2011
+        Project #3
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+    charset=iso-8859-1" />
+    <title>SDSU Job Connection</title>
+    <link rel="stylesheet" type="text/css" href="student.css" /> 
+    <script type="text/javascript" src="student.js"></script> 
+	<script type="text/javascript" src="ajax_get_lib.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <h1 class="heading">SDSU JOB CONNECTION</h1>
+		<h2>Student Form</h2>
+		<div id="top-navigation">
+				<a href="proj3.html">Home</a>
+	</div>
+	<h3>Student please indicates your background and interest by filling in the form below:</h3>
+	
+	<fieldset>
+	<legend>Personal Information</legend>
+        <form  
+        name="student"
+	
+        method="post" 
+        action="/~trst019/proj3/student.php"
+	enctype="multipart/form-data">		
+		<h4>*: is required field</h4>
+	    <table>
+				<tr>
+					<td><label class="label">RedID:*</label></td>
+					<td colspan="2"><input type="text" name="redID" size="9" maxlength="9" /></td>
+				</tr>
+                <tr>		
+                    <td><label class="label">First Name:*</label></td>
+                    <td colspan="2"><input type="text" name="fname" size="20"  /></td>			
+                    <td><label class="label">Last Name:*</label></td>
+                    <td colspan="2"><input type="text" name="lname" size="20"  /></td>                    
+                </tr>   
+				<tr>
+					<td><label class="label">Photo:</label></td>
+					<td><input type="file" name="file" /></td>
+
+				</tr>
+				<tr>
+					<td><label class="label">Email Address:*</label></td>
+					<td><input type="text" name="email" size="50" /></td>
+				</tr>
+				<tr>
+							<td><label class="label">Phone:</label></td>
+                   			<td colspan="3">(<input type="text" name="areaphone" size="3" maxlength="3"/>) &nbsp;&nbsp;
+							<input type="text" name="prefixphone" size="3" maxlength="3"/> &nbsp;-&nbsp;
+							<input type="text" name="phone" size="4" maxlength="4"/><span class="hint"> For example: (858)524-5478</span></td>
+                    <td><label class="label">Current GPA:</label></td>
+                    <td><input type="text" name="gpa" size="4" maxlength="4"/></td>
+					
+				</tr>
+				<tr>
+					<td><label class="label">Expected graduate date:*</label></td>
+					<td colspan="3">
+                        <input type="radio" class="radio" name="session" value="fall" />
+                        <label class="label">Fall</label>  
+                        <input type="radio" class="radio" name="session" value="spring" />
+                        <label class="label">Spring</label>
+						<input type="text" name="graduate" size="4" maxlength="4"/>
+					</td>
+				</tr>
+				<div id="positionsought">
+				<tr>
+					<td><label class="label">Position sought:*</label></td>
+					<td colspan="2">
+                        <input type="checkbox" class="checkbox" name="position[]" value="Full-time" />
+                        <label class="label">Full-time</label>  
+                        <input type="checkbox" class="checkbox" name="position[]" value="Part-time" />
+                        <label class="label">Part-time</label>
+					</td>
+				</tr>
+				</div>
+				<tr>
+					<td><label>Academic Level:*</label></td>                    
+                    <td colspan="3">
+                        <input checked="check" type="radio" class="radio" name="level" value="Lowerclass" />
+                        <label class="label">Lower classman</label>  
+                        <input type="radio" class="radio" name="level" value="Upperclass" />
+                        <label class="label">Upper classman</label>
+                        <input type="radio" class="radio" name="level" value="Graduate" />
+                        <label class="label">Graduate</label> 
+					</td>
+				</tr>
+				<div id="program">
+				<tr>
+                    <td><label>Programming Languages:*</label></td>                    
+                    <td colspan="4">
+                        <input type="checkbox" class="checkbox" name="language[]" value="C" />
+                        <label class="label">C</label>  
+                        <input type="checkbox" class="checkbox" name="language[]" value="C++" />
+                        <label class="label">C++</label>
+                        <input type="checkbox" class="checkbox" name="language[]" value="Java" />
+                        <label class="label">Java</label>  
+                        <input type="checkbox" class="checkbox" name="language[]" value="Perl" />
+                        <label class="label">Perl</label>
+					</td>
+				</tr>
+				<tr>
+                    <td><label>			</label></td>                    
+                    <td colspan="5">
+                        <input type="checkbox" class="checkbox" name="language[]" value="Python" />
+                        <label class="label">Python</label>
+						<input type="checkbox" class="checkbox" name="language[]" value="Ruby" />
+                        <label class="label">Ruby</label>
+                        <input type="checkbox" class="checkbox" name="language[]" value="PHP" />
+                        <label class="label">PHP</label>  
+                        <input type="checkbox" class="checkbox" name="language[]" value="C#" />
+                        <label class="label">C#</label>
+                        <input type="checkbox" class="checkbox" name="language[]" value="Visual Basic" />
+                        <label class="label">Visual Basic</label>
+                    </td>                                                                                                 
+                </tr>
+				</div>
+				<tr>
+                    <td><label>Core courses completed:</label></td>                    
+                    <td colspan="3">
+                        <input type="checkbox" class="checkbox" name="course[]" value="CS310" />
+                        <label class="label">CS310</label>  
+                        <input type="checkbox" class="checkbox" name="course[]" value="CS320" />
+                        <label class="label">CS320</label>
+                        <input type="checkbox" class="checkbox" name="course[]" value="CS370" />
+                        <label class="label">CS370</label>  
+					</td>
+				</tr>
+				<tr>
+                    <td><label>					</label></td>                    
+                    <td colspan="3">
+                        <input type="checkbox" class="checkbox" name="course[]" value="CS530" />
+                        <label class="label">CS530</label>
+                        <input type="checkbox" class="checkbox" name="course[]" value="CS560" />
+                        <label class="label">CS560</label>
+						<input type="checkbox" class="checkbox" name="course[]" value="CS570" />
+                        <label class="label">CS570</label>
+                    </td>                                                                                                 
+                </tr> 
+				<div id="os">
+				<tr>
+                    <td><label>Operating Systems:*</label></td>                    
+                    <td colspan="3">
+                        <input type="checkbox" class="checkbox" name="osystem[]" value="windows" />
+                        <label class="label">Windows</label>  
+                        <input type="checkbox" class="checkbox" name="osystem[]" value="Mac" />
+                        <label class="label">Mac</label>
+                        <input type="checkbox" class="checkbox" name="osystem[]" value="Unix" />
+                        <label class="label">UNIX</label>
+                    </td>                                                                                                 
+                </tr> 
+				</div>
+				<div id="jobtype">
+				<tr>
+                    <td><label>Type of position:*</label></td>                    
+                    <td>
+                        <input type="checkbox" class="checkbox" name="job[]" value="General computer help, client administration" />
+                        <label class="label">General computer help, client administration</label>  
+					</td>
+				</tr>
+				<tr>
+                    <td ><label>				</label></td>                    
+                    <td >
+                        <input type="checkbox" class="checkbox" name="job[]" value="Server admin" />
+                        <label class="label">Server administration</label>
+					</td>
+				</tr>
+				<tr>
+                    <td><label>			</label></td>                    
+                    <td >
+                        <input type="checkbox" class="checkbox" name="job[]" value="Application programming" />
+                        <label class="label">Application programming</label>  
+					</td>
+				</tr>
+				<tr>
+                    <td><label>			</label></td>                    
+                    <td>
+                        <input type="checkbox" class="checkbox" name="job[]" value="Systems software development" />
+                        <label class="label">Systems software development</label>
+					</td>
+				</tr>
+				<tr>
+                    <td><label>			</label></td>                    
+                    <td>
+                        <input type="checkbox" class="checkbox" name="job[]" value="Software testing" />
+                        <label class="label">Software testing</label>
+					</td>
+				</tr>
+				<tr>
+                    <td><label>			</label></td>                    
+                    <td>
+						<input type="checkbox" class="checkbox" name="job[]" value="web application development" />
+                        <label class="label">Web application development</label>  
+					</td>
+				</tr>
+				<tr>
+                    <td><label>			</label></td>                    
+                    <td>
+                        <input type="checkbox" class="checkbox" name="job[]" value="mobile flatform development" />
+                        <label class="label">Mobile flatform development</label>
+					</td>
+				</tr>
+				<tr>
+                    <td><label>			</label></td>                    
+                    <td>
+                        <input type="checkbox" class="checkbox" name="job[]" value="Marketing/business development" />
+                        <label class="label">Marketing/business development</label>
+                    </td>                                                                                                 
+                </tr>
+				</div>
+				
+				<tr>
+					<td><label class="label">Faculty reference:</label></td>
+					<td colspan="2"><input type="text" name="ref" size="30"  /></td>
+				</tr>				
+				<tr>
+					<td class="multiline"><label class="label">Other skills:</label></td>
+					<td colspan="3"><textarea rows="3" cols="50" name="skill"></textarea></td>
+				</tr>
+            </table>
+            
+            <div class="buttons">
+                <input type="reset" />
+                <input type="submit" value="Submit" />
+            </div>        
+        </form>   
+	</fieldset>     
+    </div>
+    <script type="text/javascript">
+    		init();    	           	
+	</script> 
+</body>
+
+</html>

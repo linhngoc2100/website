@@ -1,0 +1,4 @@
+use trst019;
+
+SELECT redID, first_name, last_name from student
+WHERE language LIKE '%C++%';

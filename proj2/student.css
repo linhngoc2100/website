@@ -1,0 +1,125 @@
+/* Nguyen, Linh    Account:  trst019
+        CS545, Fall 2011
+        Project #2
+*/
+html, body {
+    background-color: #C4D0FF;
+	min-width:700px;
+	margin:0;	
+	padding:0;
+	height:100%;
+    }
+          
+    
+fieldset {
+    width: 650px;
+    margin: 0 auto 0 auto;
+    }     
+
+.error {
+    color: red;
+    }
+
+.buttons {
+    text-align: center;
+	padding: 25px 0 5px 0;
+    }
+.heading {
+	font-size: 35px;
+	padding:10px;
+	background-color:red;
+	top:0;
+	right:0;
+	left:0;
+	text-align:center;
+
+	}
+td .button {
+    margin: 25px;
+    }  
+    
+table {
+    background-color: #DDF;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #009;
+    padding: 20px;
+    }   
+    
+textarea {
+    margin-top: 10px;
+    margin-bottom: 10px
+    }
+    
+.err_msg {
+    color: red;
+    }  
+    
+#status {
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    } 
+#top-navigation{
+	padding-top:10px;
+	padding-bottom:15px;
+	padding-left:25px;
+	}
+	
+#top-navigation ul {
+	list-style-type: none;
+	text-align: left;
+	}
+#top-navigation li {
+	background-color: blue;
+	color: blue;
+	display: inline;
+	padding: 0;
+	margin-left: 10px;
+	}
+#top-navigation a{
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	padding: 3px 7px 3px 7px;
+	border: 2px solid red;
+	text-decoration: none;
+	}
+#top-navigation a:link{}
+#top-navigation a:visited{}
+#top-navigation a:hover{
+	color: white;
+	background-color: red;
+	}
+.para{
+	margin:15px;
+}
+h2,h3{
+	margin:0px;
+	text-align:center;
+}
+h4{
+	margin:5px;
+	
+}
+.out-field{
+background-color: #F9E1CE;
+    margin: 10px 10% 0 10%;
+	border: 2px solid gray;
+	height: 100%;
+	
+}
+.maincontent {
+	padding: 15px 10% 0 10%;
+	margin-top: 0px;
+	}
+
+.checkbox, .radio{
+	margin: 0 5px 0 5px;
+]
+
+
+
+

@@ -1,0 +1,122 @@
+
+/* Nguyen, Linh    Account:  trst019
+        CS545, Fall 2011
+        Project #1
+*/
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #BCA7FF;
+	min-width: 800px;
+	}
+	
+p {
+	padding: 20px;
+	}
+	
+.reset {
+	clear: both;
+	}		
+
+#heading {
+	padding-left: 250px;
+
+	}
+	
+#top-navigation{
+	padding-bottom:25px;
+	padding-left:25px;
+	}
+	
+#top-navigation ul {
+	list-style-type: none;
+	text-align: center;
+	}
+#top-navigation li {
+	background-color: blue;
+	color: blue;
+	display: inline;
+	padding: 0;
+	margin-left: -4px;
+	}
+#top-navigation a{
+	background-color: white;
+	color: blue;
+	font-weight: bold;
+	padding: 3px 7px 3px 7px;
+	border: 2px solid blue;
+	text-decoration: none;
+	}
+#top-navigation a:link{}
+#top-navigation a:visited{}
+#top-navigation a:hover{
+	color: white;
+	background-color: red;
+	}
+	
+#bottom-navigation ul {
+	font-family: "arial";
+	text-align: right;
+	margin-top:10%;
+	
+	font-size: 70%;
+	}
+#bottom-navigation li {
+	color: black;
+	display: inline;
+	padding: 0;
+	margin-left: 2px;
+	}
+#bottom-navigation a{
+	color: black;	
+	padding: 3px 7px 3px 7px;
+	text-decoration: none;
+	}
+#bottom-navigation a:link{}
+#bottom-navigation a:visited{}
+#bottom-navigation a:hover{
+	text-decoration: underline;
+	}			
+table,th{
+	padding: 5px 5px 5px 5px;
+	margin-top: 20px;
+	margin-left: 5px;
+	font-family: "arial";
+	border:2px solid black;
+}
+
+#framecontent { 
+	float: left;
+	margin: 20px;
+	left:0;	
+	width:300px;	
+        
+    }
+#framecontent a {
+    color: black;
+    font-weight: bold;
+    font-family: helvetica, arial;
+    text-decoration: none;
+    font-size: 90%;
+    padding-left: 0;
+    margin-left: 0;    
+    }   
+    
+#framecontent a:hover { 
+    color: #9B0020;
+    text-decoration: underline;
+    background-color: #EADACA;
+    }    
+
+#framecontent ul {
+    list-style-type: square;
+    margin-left: -5px;
+    }
+#right {
+	float:right;
+	margin:20px;
+}
+
+#middle{
+	padding-left:500px;
+}

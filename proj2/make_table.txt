@@ -1,0 +1,23 @@
+use trst019;
+
+drop table if exists student;
+
+create table student(
+			redID int(9) PRIMARY KEY NOT NULL,
+    			first_name varchar(25) NOT NULL,
+    			last_name varchar(25) NOT NULL,
+			photos blob,		
+    			email varchar(30) NOT NULL,
+			phone_number varchar(10) NOT NULL,
+			gpa decimal(3,2) NOT NULL,														
+			session varchar(6) NOT NULL,
+			graduate numeric(4) NOT NULL,							
+			position varchar(20) NOT NULL,
+			level varchar(25) NOT NULL,
+			language varchar(70) NOT NULL,
+			course varchar(120) NOT NULL,
+			osystem varchar(25) NOT NULL,
+			job varchar(256) NOT NULL,
+			faculty_ref varchar(50) NOT NULL,
+			skills varchar(200) NOT NULL)
+			file ;

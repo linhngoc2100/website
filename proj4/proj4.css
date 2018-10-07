@@ -1,0 +1,100 @@
+/* Nguyen, Linh    Account:  trst019
+        CS545, Fall 2011
+        Project #1
+*/
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	background-image: url('pictures/bg-basic.jpg');
+	min-width: 800px;
+	
+	}
+	
+p {
+	padding: 5px;
+	}
+
+span{
+	font-weight: bold;
+	text-align: center;
+}
+
+button{
+	margin-left:5px;
+}		
+
+#heading {
+	background-color:white;
+	padding-left: 250px;
+
+	}
+	
+#top-navigation{
+	padding-bottom:25px;
+	padding-left:25px;
+	}
+	
+#top-navigation ul {
+	list-style-type: square;
+	text-align: center;
+	}
+#top-navigation li {
+	
+	color: black;
+	display: inline;
+	padding: 0;
+	margin-left: 45px;
+	}
+#top-navigation a{
+	
+	color: black;
+	font-weight: bold;
+	font-size: 110%;
+	padding: 3px 7px 3px 7px;
+	border: none;
+	text-decoration: none;
+	}
+	
+#top-navigation a:link{}
+#top-navigation a:visited{}
+#top-navigation a:hover{
+	color: #9B0020;
+    text-decoration: underline;
+    background-color: #EADACA;
+	}
+	
+#framecontent { 
+	
+	margin-left: 50px;
+	margin-right:20px;		
+        
+    }  
+
+li a{
+	color: #750000;
+	padding: 2px;
+	text-decoration: none;
+}	
+
+
+#container {
+	background: transparent;
+	padding:0;
+	margin:0 140px 0 140px;
+	position :relative;	
+	
+}
+
+
+.displaysale{
+	padding:10px 20px 15px 75px;
+}
+
+.displayspecial{
+	padding-left:20px;
+	padding-bottom:20px;
+}
+
+
+

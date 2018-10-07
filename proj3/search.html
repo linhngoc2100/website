@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+	Nguyen, Linh    Account:  trst019
+        CS545, Fall 2011
+        Project #2
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+    charset=iso-8859-1" />
+    <title>SDSU Job Connection</title>
+    <link rel="stylesheet" type="text/css" href="student.css" />   
+
+</head>
+
+<body>
+
+    <div>
+	
+        <h1 class="heading">SDSU JOB CONNECTION</h1>		
+		<h2>Faculty</h2>
+	
+		<div id="top-navigation">
+				<ul>
+        			<li><a href="proj3.html">Home</a></li>
+					
+					<li><a href="logout.php">Logout</a></li>
+				</ul>
+		</div>
+	
+	<fieldset>
+	<legend>Search option</legend>
+        <form  
+        name="facultysearch"
+        method="post" 
+        action="/~trst019/proj3/searchvalidate.php">		
+		<h4>Faculty please enter your criteria to search: </h4>
+	    <table>
+				
+				
+				<tr>
+					<td colspan="2"><label class="label">Minimum GPA:</label></td>
+                    <td><input type="text" name="gpa" size="3" /></td>
+				</tr>
+				
+				<tr>
+					<td><label class="label">Position sought:</label></td>
+					<td colspan="3">
+                        <input type="checkbox" class="checkbox" name="position[]" value="fulltime" />
+                        <label class="label">Full-time</label>  
+                        <input type="checkbox" class="checkbox" name="position[]" value="parttime" />
+                        <label class="label">Part-time</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>Academic Level:</label></td>                    
+                    <td colspan="3">
+                        <input type="checkbox" class="checkbox" name="level" value="lowerclass" />
+                        <label class="label">Lower classman</label>  
+                        <input type="checkbox" class="checkbox" name="level" value="upperclass" />
+                        <label class="label">Upper classman</label>
+                        <input type="checkbox" class="checkbox" name="level" value="graduate" />
+                        <label class="label">Graduate</label> 
+					</td>
+				</tr>
+				
+				<tr>
+                    <td colspan="2"><label>Programming Languages:</label></td>                    
+                    <td colspan="7">
+                        <input type="checkbox" class="checkbox" name="language[]" value="c" />
+                        <label class="label">C</label>
+				        <input type="checkbox" class="checkbox" name="language[]" value="c++" />
+                        <label class="label">C++</label>	
+				
+                        <input type="checkbox" class="checkbox" name="language[]" value="java" />
+                        <label class="label">Java</label>  
+                        <input type="checkbox" class="checkbox" name="language[]" value="perl" />
+                        <label class="label">Perl</label>
+                        <input type="checkbox" class="checkbox" name="language[]" value="python" />
+                        <label class="label">Python</label>
+						<input type="checkbox" class="checkbox" name="language[]" value="ruby" />
+                        <label class="label">Ruby</label>
+
+                        <input type="checkbox" class="checkbox" name="language[]" value="php" />
+                        <label class="label">PHP</label>  
+                        <input type="checkbox" class="checkbox" name="language[]" value="c#" />
+                        <label class="label">C#</label>
+                        <input type="checkbox" class="checkbox" name="language[]" value="visual" />
+                        <label class="label">Visual Basic</label>
+                    </td>                                                                                                 
+                </tr>
+				<tr>
+                    <td colspan="2"><label>Courses completed:</label></td>                    
+                    <td colspan="4">
+                        <input type="checkbox" class="checkbox" name="course[]" value="310" />
+                        <label class="label">CS310</label>  
+                        <input type="checkbox" class="checkbox" name="course[]" value="320" />
+                        <label class="label">CS320</label>
+
+                        <input type="checkbox" class="checkbox" name="course[]" value="370" />
+                        <label class="label">CS370</label>  
+                        <input type="checkbox" class="checkbox" name="course[]" value="530" />
+                        <label class="label">CS530</label>
+                        <input type="checkbox" class="checkbox" name="course[]" value="560" />
+                        <label class="label">CS560</label>
+						<input type="checkbox" class="checkbox" name="course[]" value="570" />
+                        <label class="label">CS570</label>
+                    </td>                                                                                                 
+                </tr> 
+				
+				<tr>
+                    <td colspan="2"><label>Type of position:</label></td>                    
+                    <td colspan="3">
+                        <input type="checkbox" class="checkbox" name="job[]" value="gcomputer" />
+                        <label class="label">general computer help, client administration</label> 
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>				</label></td> 
+					<td colspan="3">
+                        <input type="checkbox" class="checkbox" name="job[]" value="sadmin" />
+                        <label class="label">server administration</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>				</label></td> 
+					<td colspan="3">
+                        <input type="checkbox" class="checkbox" name="job[]" value="aprogram" />
+                        <label class="label">application programming</label>  
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>				</label></td> 
+					<td colspan="3">
+                        <input type="checkbox" class="checkbox" name="job[]" value="ssdevelop" />
+                        <label class="label">systems software development</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>				</label></td> 
+					<td colspan="3">
+                        <input type="checkbox" class="checkbox" name="job[]" value="stest" />
+                        <label class="label">software testing</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>				</label></td> 
+					<td colspan="3">
+						<input type="checkbox" class="checkbox" name="job[]" value="webdevelop" />
+                        <label class="label">web application development</label>  
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>				</label></td> 
+					<td colspan="3">
+                        <input type="checkbox" class="checkbox" name="job[]" value="mobiledevelop" />
+                        <label class="label">mobile flatform development</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>				</label></td> 
+					<td colspan="3">
+                        <input type="checkbox" class="checkbox" name="job[]" value="marketingdevelop" />
+                        <label class="label">marketing/business development</label>
+					</td>
+                                                                                                                     
+                </tr>
+				
+            </table>
+            
+            <div class="buttons">
+                <input type="reset" />
+                <input type="submit" value="Submit" />
+            </div>        
+        </form>   
+	</fieldset>     
+    </div>
+</body>
+
+</html>

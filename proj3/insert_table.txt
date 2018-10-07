@@ -1,0 +1,4 @@
+use trst019;
+
+INSERT INTO student VALUES('','John','Smith','123 Main St','','Chula Vista',
+    'CA','93214');

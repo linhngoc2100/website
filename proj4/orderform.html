@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+    charset=iso-8859-1" />
+    <title>Bertha's Deluxe Chocolates</title>
+	<link rel="stylesheet" type="text/css" href="proj4.css" />  
+	<script type="text/javascript" src="proj4.js"></script>
+	<script type="text/javascript" src="ajax_get_lib.js"></script>
+</head>
+
+
+<body>
+	
+		<div id="heading">
+			<img src="pictures/logo.jpg" width="100px" alt="logo" />	
+			<img src="pictures/Bertha.jpg" width="700px" alt="Bertha" />
+			<a href=""><img src="pictures/shopping-cart-icon.jpg" width="80px" alt="cart icon" /></a>
+		</div>
+	<div id="container">
+			<div id="top-navigation">
+				<ul>
+					<li><a href="proj4.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="orderOnline.html">Order Online</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>		
+			</div>
+		<form name="personal"
+		method="post" 
+		action="http://trieste.sdsu.edu/cgi-bin/trst000/echo.cgi"
+		enctype="multipart/form-data"> 
+	<fieldset id="billing">
+		<legend>Billing Address</legend>
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="fname" size="30" /></td>
+        </tr>
+		<tr>
+            <td>Last Name:</td>
+            <td><Input type="text" name="lname" size="30" /></td>            
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><Input type="text" name="address" size="50" /></td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><Input type="text" name="city" size="20" /></td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td><Input type="text" name="state" size="2" /></td>
+        </tr>
+        <tr>
+            <td>Zip:</td>
+            <td><Input type="text" name="zip" size="9" /></td>            
+        </tr> 
+		<tr>
+            <td>Phone:</td>
+            <td><Input type="text" name="phone" size="10" /></td>            
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>     
+    </table> 
+	</fieldset>
+	
+	<fieldset id="shipping">
+		<legend>Shipping Address</legend>
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="sfname" size="30" /></td>
+        </tr>
+		<tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="slname" size="30" /></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><Input type="text" name="saddress" size="50" /></td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><Input type="text" name="scity" size="20" /></td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td><Input type="text" name="sstate" size="2" /></td>
+        </tr>
+        <tr>
+            <td>Zip:</td>
+            <td><Input type="text" name="szip" size="9" /></td>            
+        </tr> 
+		<tr>
+            <td>Phone:</td>
+            <td><Input type="text" name="sphone" size="10" /></td>            
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>     
+    </table> 
+	</fieldset>
+	<fieldset id="payment">
+	<legend>Payment</legend>
+	<table>
+	<tr>
+		<td>Payment Type:</td>
+		<td><select name="paymentype">
+			<option value="Visa">Visa</option>
+			<option value="Mastercard">Mastercard</option>
+			<option value="American_Express">American Express</option>
+			</select></td>
+	</tr>
+	<tr>
+		<td>Card Number: </td>
+		<td><input type="text" name="cardnumber" size="20" /></td>		
+	</tr>
+	<tr>
+		<td>Expiration Date: </td>
+		<td><select name="month">
+			<option value="Jan">01</option>	<option value="Feb">02</option>	<option value="Mar">03</option>
+			<option value="Apr">04</option>	<option value="May">05</option>	<option value="Jun">06</option>
+			<option value="Jul">07</option>	<option value="Aug">08</option>	<option value="Sep">09</option>
+			<option value="Oct">10</option>	<option value="Nov">11</option>	<option value="Dec">12</option></select>
+		<select name="year">
+			<option value="2012">2012</option>	<option value="2013">2013</option>	<option value="2014">2014</option>
+			<option value="2015">2015</option>	<option value="2016">2016</option>	<option value="2017">2017</option>
+			</select></td>			
+	</tr>
+	</table></fieldset>
+	
+	<div id="reg" class="buttons">
+                <input type="reset" />
+                <input type="submit" value="Submit" />
+    </div>
+	</form>			
+			
+	</div>
+</body>
+
+</html>
